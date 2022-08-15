@@ -10,21 +10,35 @@
 <body>
     <h1 class="text-center text-5xl mt-6">Money Transaction Area!</h1>
     <section class="w-3/4 mx-auto mt-12">
+        
         <div class="grid grid-cols-3 gap-4 ">
             <div class="bg-blue-300 text-white p-6 rounded-lg">
                 <h3 class="text-2xl">Deposite</h3>
-                <h2 class="text-3xl font-semibold">$<span>00</span></h2>
+                <h2 class="text-3xl font-semibold">$<span id="deposit-field">00</span></h2>
             </div>
             <div class="bg-green-500 text-white p-6 rounded-lg">
                 <h3 class="text-2xl">Withdraw</h3>
-                <h2 class="text-3xl font-semibold">$<span>00</span></h2>
+                <h2 class="text-3xl font-semibold">$<span id="withdraw-field">00</span></h2>
             </div>
             <div class="bg-violet-500 text-white p-6 rounded-lg">
                 <h3 class="text-2xl">Total Amount</h3>
-                <h2 class="text-3xl font-semibold">$<span>1220</span></h2>
+                <h2 class="text-3xl font-semibold">$<span id="total-amount">1220</span></h2>
             </div>
             
         </div>
+        <div class="grid grid-cols-2 gap-4 mt-12">  
+            <div class="bg-emerald-500  p-6 rounded-lg">
+                <h2 class="text-2xl mb-2 text-white">Deposit Amout</h2>
+                <input class="block w-3/4 mb-2 rounded-lg py-1 px-2" type="text" name="" id="deposit-amount" placeholder="$Amout you want to deposite">
+                <button id="deposit-btn" class="bg-green-700 text-white px-4 py-2 rounded-xl font-bold hover:bg-blue-400">Deposit</button>
+            </div>
+            <div class="bg-teal-500  p-6 rounded-lg">
+                <h2 class="text-2xl mb-2 text-white">Withdraw Amout</h2>
+                <input class="block w-3/4 mb-2 rounded-lg py-1 px-2" type="text" name="" id="withdraw-amount" placeholder="$Amout you want to Withdraw">
+                <button id="withdraw-btn" class="bg-green-700 text-white px-4 py-2 rounded-xl font-bold hover:bg-blue-400">Withdraw</button>
+            </div>
+        </div>
     </section>
+    <script src="transaction.js"></script>
 </body>
 </html>
